@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+.card {
+    backdrop-filter: blur(15px);
+    padding: 40px 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.joke-box {
+    background-color: rgb(182, 128, 128);
+    padding: 30px;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#jokeElement {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #f8fafc;
+}
+
+button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    background-color: crimson;
+    padding: 20px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .card {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #jokeElement {
+        font-size: 1.1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .joke-box {
+        min-height: 220px;
+        padding: 20px;
+    }
+
+    #jokeElement {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    button {
+        padding: 14px 20px;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
